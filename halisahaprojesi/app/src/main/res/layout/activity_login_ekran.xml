@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ustlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/halisaha"></ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_form_rounded"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/LoginEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="Email :"
+                android:padding="5dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/LoginParola"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="parola:"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/GirisYap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_button_rounded"
+            android:text="Giriş Yap"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/KayitOl"
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Kayit Ol"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

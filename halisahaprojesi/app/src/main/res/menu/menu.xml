@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    android:title="Genel Bilgi"
+        android:id="@+id/action_genelbilgi"
+    app:showAsAction="never">
+
+</item>
+
+    <item
+        app:showAsAction="never"
+        android:title="Çıkış"
+        android:id="@+id/action_cikis"
+        >
+
+    </item>
+</menu>

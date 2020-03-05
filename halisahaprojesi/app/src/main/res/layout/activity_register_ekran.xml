@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".RegisterEkran" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/halisaha">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_form_rounded"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/RegisterKullaniciAdi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="Kullanıcı adı :"
+                android:padding="5dp"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/RegisterEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="Email:"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/RegisterParola"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Parola:"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/RegisterKayitOl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_button_rounded"
+            android:text="Kayit ol"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

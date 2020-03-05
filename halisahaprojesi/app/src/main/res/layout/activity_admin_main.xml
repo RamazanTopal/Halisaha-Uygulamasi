@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".AdminMainActivity">
+    <TextView
+        android:id="@+id/baslik"
+
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADMİN PANELİ"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+    </TextView>
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/halisaha"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/baslik"
+        ></ImageView>
+
+
+        <TextView
+            android:id="@+id/halisahaismi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="16dp"
+
+            android:layout_below="@id/imageview"
+            android:text="Halisaha ismi:"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+
+            android:id="@+id/EditTexthalisahaismi"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="174dp"
+           android:background="#FFFFFF"
+            android:layout_below="@+id/imageview"
+            android:hint="Halisaha ismi..."
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="24dp"></EditText>
+
+        <TextView
+            android:id="@+id/adres"
+            android:layout_below="@+id/halisahaismi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="97dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adres:"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF">
+        </TextView>
+
+        <EditText
+            android:background="#ffffff"
+            android:layout_height="150dp"
+            android:windowSoftInputMode="stateHidden"
+            android:id="@+id/EditTextadres"
+            android:layout_width="230dp"
+            android:layout_below="@+id/EditTexthalisahaismi"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="35dp"
+            android:textColorHint="#000000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/ucret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adres"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="161dp"
+            android:text="Ücret :"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/EditTextucret"
+            android:layout_width="230dp"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditTextadres"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="44dp"
+            android:background="#FFFFFF"
+            android:hint="Ücret..."
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            android:textSize="24dp"></EditText>
+
+        <Button
+            android:id="@+id/buttonEkle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+            android:layout_marginTop="620dp"
+            android:background="@drawable/background_button"
+            android:text="Ekle"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            />
+
+
+
+</RelativeLayout>

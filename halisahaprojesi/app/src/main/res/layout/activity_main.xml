@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:background="#e5e5e5"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gradient_end"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/textViewİlSeç"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İl Seçin:"
+
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerİl"
+            android:layout_marginTop="61dp"
+            android:layout_marginLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/bg_gradient"
+        android:layout_below="@id/relativeLayout1"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>
